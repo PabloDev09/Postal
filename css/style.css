@@ -1,44 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: content-box;
 }
 
-body{
-    background-color: #fae9ce;
-}
-
-b{
-    color: rgb(106, 106, 255);
-}
-
 h1{
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    color: rgb(106, 106, 255);
     font-family: 'Courier New', Courier, monospace;
 }
 
 #postal{
-    position: relative;
     float: left;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
     width: 80%;
     padding: 10px;
     margin-left: 50%;
     margin-top: 100px;
     transform: translate(-50%);
-    color: rgb(117, 162, 247);
-    border: 5px solid rgb(247, 117, 117);
-    border-radius: 25px;
-    background-color: white;
-    font-family: sans-serif;
+    border: 1px solid black;
+    background-image: url('../img/imagen.jpg');
+    background-size: cover;
+    font-family: 'Open Sans';
 }
 
 #left-img{
     position: relative;
     float: left;
-    width: 40%;
+    width: 50%;
 }
 
 #left-img img{
@@ -49,13 +43,11 @@ h1{
     margin-left: 5px;
     margin-right: 10px;
     transform: translate(0, -25%);
-    border: 2px solid rgb(117, 162, 247);;
     border-radius: 20px;
 }
 
 #left-img hr{
     float: left;
-    color: rgb(117, 162, 247);
     position: relative;
     margin-top: 15px;
     height: 325px;
@@ -65,15 +57,15 @@ h1{
 #right-content{
     position: relative;
     float: left;
-    width: 60%;
+    width: 50%;
 }
 
 #right-content p{
     margin-top: 10px;
+    font-size: 20px;
 }
 
 #right-content p::first-letter{
-    color: rgb(104, 104, 250);
     text-transform: uppercase;
     font-size: 35px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
