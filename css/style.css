@@ -1,93 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 *{
+    min-width: 40%;
     padding: 0px;
     margin: 0px;
     box-sizing: content-box;
-}
-
-h1{
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#postal{
-    float: left;
-    position: relative;
-    box-sizing: border-box;
-    justify-content: center;
-    width: 80%;
-    padding: 10px;
-    margin-left: 50%;
-    margin-top: 100px;
-    transform: translate(-50%);
-    border: 1px solid black;
-    background-image: url('../img/imagen.jpg');
-    background-size: cover;
     font-family: 'Open Sans';
 }
 
-#left-img{
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+#postal{
     position: relative;
-    float: left;
-    width: 50%;
+    width: 80%;
+    margin-left: 50%;
+    padding: 15px;
+    transform: translate(-50%);
+    background-color:   #FFFDD0;
 }
 
-#left-img img{
-    position: relative;
-    float: left;
-    width:  400px;
-    margin-top: 25%;
-    margin-left: 5px;
-    margin-right: 10px;
-    transform: translate(0, -25%);
-    border-radius: 20px;
-}
-
-#left-img hr{
-    float: left;
-    position: relative;
-    margin-top: 15px;
-    height: 325px;
-    border: 1px solid;
-}
-
-#right-content{
-    position: relative;
-    float: left;
-    width: 50%;
-}
-
-#right-content p{
+#header{
+    width: 100%;
     margin-top: 10px;
-    font-size: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;    
+    text-align: center;
 }
 
-#right-content p::first-letter{
-    text-transform: uppercase;
-    font-size: 35px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-footer{
-    float: left;
+#postal-content{
     width: 100%;
 }
 
-#footer-left{
-    float: left;
-    width: 40%;
-    text-align: left;
+#text p + p{
+    margin-top: 20px;
 }
 
-#footer-left p{
-    padding-left: 10px;
+img{
+    float: left;
+    max-width: 25px;
+    max-height: 25px;
+    border: 2px solid black;
+    padding: 5px;
+    position: relative;
+}
+
+
+
+#footer{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#footer-left{
+    position: relative;
+    float: left;
+    text-align: left;
+    width: 50%;
+    font-size: 20px;
 }
 
 #footer-right{
+    position: relative;
     float: left;
-    width: 60%;
     text-align: right;
+    width: 50%;
+    font-size: 20px;
 }
