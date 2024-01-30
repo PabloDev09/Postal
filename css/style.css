@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@font-face {
+    font-family: 'Lobster';
+    src: url(../img/Lobster-Regular.ttf);
+}
 *{
     min-width: 40%;
     padding: 0px;
@@ -9,6 +11,7 @@
 }
 
 body {
+    font-family: 'Lobster';
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,8 +20,9 @@ body {
   }
 
 #postal{
+    float: left;
     position: relative;
-    width: 80%;
+    width: 70%;
     margin-left: 50%;
     padding: 15px;
     transform: translate(-50%);
@@ -26,6 +30,7 @@ body {
 }
 
 #header{
+    float: left;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -34,29 +39,46 @@ body {
 }
 
 #postal-content{
+    float: left;
     width: 100%;
+    margin-bottom: 75px;
+    margin-top: 75px;
+}
+
+#img{
+    float: left;
+    width: 40%;
+}
+
+#img img{
+    max-width: 85%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    border-right: 2px solid black;
+}
+
+#text{
+    float: right;
+    width: 60%;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+#text p::first-letter{
+    font-size: 35px;
+    font-weight: 800;
 }
 
 #text p + p{
-    margin-top: 20px;
+    margin-top: 25px;
 }
-
-img{
-    float: left;
-    max-width: 25px;
-    max-height: 25px;
-    border: 2px solid black;
-    padding: 5px;
-    position: relative;
-}
-
-
 
 #footer{
     position: relative;
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 #footer-left{
